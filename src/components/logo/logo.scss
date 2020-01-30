@@ -1,0 +1,48 @@
+.logo-img {
+  height: 80px;
+}
+
+.logo {
+  a {
+    font-family: $fancy-font-family;
+    margin-top: 8px;
+    color: $black;
+    position: relative;
+
+    h1 {
+      font-size: 36px;
+    }
+    img {
+      vertical-align: top;
+      margin-top: 5px;
+      height: 80px;
+    }
+
+    &:hover,
+    &hover:active {
+      // color: $white;
+      text-decoration: none;
+    }
+    span {
+      display: block;
+    }
+
+    span:first-child {
+      font-size: smaller;
+      position: relative;
+      top: 3px;
+    }
+    @include media-query($on-palm) {
+      h1 {
+        font-size: 26px;
+      }
+      img {
+        height: 50px;
+      }
+
+      span {
+        line-height: 2.7rem;
+      }
+    }
+  }
+}
