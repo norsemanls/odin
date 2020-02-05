@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Link from "../src/link";
-import Layout from "../src/layout";
+import Layout from "../src/components/layout";
 
 export default function Index() {
   return (
