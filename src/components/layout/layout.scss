@@ -12,3 +12,8 @@
     background: $tan;
   }
 }
+
+.main {
+  display: grid;
+  grid-template-columns: auto 250px;
+}
