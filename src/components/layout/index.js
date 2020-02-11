@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Container from "@material-ui/core/Container";
+import Box from "@material-ui/core/Box";
 import Header from "../header";
 import Menu from "../menu";
 import Footer from "../footer";
@@ -13,12 +13,12 @@ function Layout({ children }) {
       </Head>
       <div className="content">
         <Header></Header>
-        <Container className="main">
+        <div className="main">
           <main>{children}</main>
           <Menu />
-        </Container>
-        <Footer />
+        </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" align="center">
       {"Copyright © "}
       <MuiLink color="inherit" href="https://material-ui.com/">
         Norseman Group Life Settlements

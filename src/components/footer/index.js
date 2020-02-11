@@ -6,14 +6,16 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <Logo></Logo>
-        <div className="footer__description">
-          A national life settlement valuation and brokerage firm, serving well
-          known financial service firms and their advisors.
+        <div className="footer__main">
+          <Logo></Logo>
+          <div className="footer__main__description">
+            A national life settlement valuation and brokerage firm, serving
+            well known financial service firms and their advisors.
+          </div>
         </div>
-      </footer>
-      <footer className="footer-final">
-        <Copyright></Copyright>
+        <div className="footer__legal">
+          <Copyright></Copyright>
+        </div>
       </footer>
     </>
   );

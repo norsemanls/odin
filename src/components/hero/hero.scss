@@ -1,0 +1,22 @@
+.hero {
+  font-family: $fancy-font-family;
+  font-size: $xlarge-font-size;
+  background: $alpha;
+  border: 1px solid $grey-light;
+  border-radius: 4px;
+  padding: $spacing-unit $spacing-unit + 10px;
+  text-align: center;
+  color: $white;
+  margin: $spacing-unit auto 6rem;
+  max-width: 700px;
+}
+
+@include media-query($breakpoint-md) {
+  .hero {
+    background: transparent;
+    font-size: $large-font-size;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $text-color;
+  }
+}

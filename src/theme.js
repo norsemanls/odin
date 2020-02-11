@@ -21,6 +21,14 @@ const theme = createMuiTheme({
     fontSize: 16,
     fontFamily: "Helvetica, sans-serif",
     fontWeight: "300"
+  },
+  breakpoints: {
+    values: {
+      sm: 576,
+      md: 768,
+      lg: 992,
+      xl: 1200
+    }
   }
 });
 

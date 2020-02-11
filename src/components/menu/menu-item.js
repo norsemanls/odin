@@ -4,13 +4,9 @@ import classnames from "classnames";
 
 const MenuItem = ({ href, children }) => {
   const router = useRouter();
-
-  console.log(router.pathname);
-  const isActive = router.pathname === href;
-
   const itemClass = classnames({
     menu__list__item: true,
-    "menu__list__item--active": isActive
+    "menu__list__item--active": router.pathname === href
   });
 
   return (
