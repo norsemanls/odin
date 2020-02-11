@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import Link from "../src/link";
+import Link from "../src/components/link";
 import Layout from "../src/components/layout";
 
 export default function Index() {

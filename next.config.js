@@ -16,7 +16,7 @@ module.exports = withSass({
         {
           loader: "sass-resources-loader",
           options: {
-            resources: ["./main.scss"]
+            resources: ["./src/main.scss"]
           }
         }
       ]

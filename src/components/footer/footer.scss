@@ -1,0 +1,44 @@
+/**
+ * Site footer
+ */
+.footer {
+  color: $white;
+  display: flex;
+  // grid-template-columns: auto 30%;
+  // grid-gap: 2rem;
+  // justify-items: left;
+  // align-items: center;
+  background-color: $tan;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid $grey-light;
+  padding: 4rem 2rem;
+
+  &__description {
+    max-width: 30rem;
+    margin-left: 1rem;
+  }
+}
+
+.footer-final {
+  background: $alpha-dark;
+  font-size: smaller;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@include media-query($breakpoint-md) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+  }
+}

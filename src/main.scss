@@ -4,7 +4,7 @@
 $base-font-family: Helvetica, sans-serif;
 $alt-font-family: Garamond, serif;
 $fancy-font-family: "Lato", sans-serif;
-$base-font-size: 16px;
+$base-font-size: 1rem;
 $base-font-weight: 300;
 $small-font-size: $base-font-size * 0.875;
 $small-medium-font-size: $base-font-size * 1.075;
@@ -43,11 +43,13 @@ $grey-dark: darken($grey, 25%);
 // Width of the content area
 $content-width: 1000px;
 
-$on-palm: 768px;
-$on-laptop: 800px;
+$breakpoint-sm: 575.98px;
+$breakpoint-md: 767.98px;
+$breakpoint-lg: 991.98px;
+$breakpoint-xl: 1199.98px;
 
 // Use media queries like this:
-// @include media-query($on-palm) {
+// @include media-query($breakpoint-md) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
@@ -58,13 +60,3 @@ $on-laptop: 800px;
     @content;
   }
 }
-
-// // Import partials from `sass_dir` (defaults to `_sass`)
-// @import
-//         "base",
-//         "layout",
-//         "syntax-highlighting",
-//         "libs/sweetalert2.min",
-//         "libs/flexboxgrid",
-//         "libs/font-awesome/font-awesome"
-// ;

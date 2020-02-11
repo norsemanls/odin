@@ -1,6 +1,7 @@
 .logo {
   display: flex;
   align-items: center;
+  min-width: 337px;
 
   &__img {
     height: 70px;
@@ -12,6 +13,7 @@
     color: $white;
     position: relative;
     margin-left: 0.5rem;
+    text-align: left;
 
     > * {
       line-height: 1;
@@ -23,6 +25,19 @@
   }
 }
 
+@include media-query($breakpoint-md) {
+  .logo {
+    min-width: 255px;
+
+    &__text {
+      font-size: 26px;
+    }
+    &__img {
+      height: 50px;
+    }
+  }
+}
+
 a.logo {
   &:hover,
   &hover:active {
@@ -30,49 +45,3 @@ a.logo {
     text-decoration: none;
   }
 }
-
-// .logo {
-//   display: inline-block;
-
-//   a {
-//     font-family: $fancy-font-family;
-//     margin-top: 8px;
-//     color: $white;
-//     position: relative;
-
-//     h1,
-//     img {
-//       display: inline-block;
-//     }
-
-//     h1 {
-//       font-size: 36px;
-//     }
-//     img {
-//       vertical-align: top;
-//       margin-top: 5px;
-//       height: 80px;
-//     }
-
-//     span {
-//       display: block;
-//     }
-
-//     span:first-child {
-//       position: relative;
-//       top: 3px;
-//     }
-//     @include media-query($on-palm) {
-//       h1 {
-//         font-size: 26px;
-//       }
-//       img {
-//         height: 50px;
-//       }
-
-//       span {
-//         line-height: 2.7rem;
-//       }
-//     }
-//   }
-// }
