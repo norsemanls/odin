@@ -1,0 +1,6 @@
+.separator {
+  &:before {
+    content: " | ";
+    padding: 0 5px;
+  }
+}
