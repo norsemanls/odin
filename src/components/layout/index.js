@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Box from "@material-ui/core/Box";
 import Header from "../header";
 import Menu from "../menu";
 import Footer from "../footer";
@@ -11,10 +10,10 @@ function Layout({ children }) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="content">
+      <div className="wrapper">
         <Header></Header>
-        <div className="main">
-          <main>{children}</main>
+        <div className="site-content">
+          <main className="site-content__wrapper">{children}</main>
           <Menu />
         </div>
       </div>

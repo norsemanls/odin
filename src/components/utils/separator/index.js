@@ -1,5 +1,5 @@
 import "./separator.scss";
 
-const Separator = () => <span class="separator"></span>;
+const Separator = () => <span className="separator"></span>;
 
 export default Separator;

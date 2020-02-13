@@ -14,8 +14,10 @@ const Menu = () => {
   return (
     <nav class="menu">
       <ul role="navigation" class="menu__list">
-        {menuItems.map(({ href, title }) => (
-          <MenuItem href={href}>{title}</MenuItem>
+        {menuItems.map(({ href, title }, i) => (
+          <MenuItem href={href} key={`menu-item-${i}`}>
+            {title}
+          </MenuItem>
         ))}
       </ul>
     </nav>

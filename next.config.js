@@ -9,18 +9,24 @@ const resourcesLoader = {
 
 module.exports = withSass({
   webpack: config => {
-    config.module.rules.push({
-      test: /\.scss$/,
-      use: [
-        "sass-loader",
-        {
-          loader: "sass-resources-loader",
-          options: {
-            resources: ["./src/vars.scss"]
+    config.module.rules.push(
+      {
+        test: /\.scss$/,
+        use: [
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: ["./src/vars.scss"]
+            }
           }
-        }
-      ]
-    });
+        ]
+      },
+      {
+        test: /\.md$/,
+        use: "raw-loader"
+      }
+    );
     return config;
   }
 });

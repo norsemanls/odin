@@ -1,21 +1,31 @@
-.content {
+.wrapper {
   background: $tan;
   background: linear-gradient(rgba(11, 26, 9, 0.65), rgba(11, 26, 9, 0.65)),
     url("/images/wooded-trail.jpeg");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
   height: 100%;
   min-height: calc(100vh - 50px);
+}
 
-  @include media-query($breakpoint-md) {
-    background: $tan;
+.site-content {
+  background: transparent;
+  margin: 3rem 10rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto 250px;
+    grid-gap: 50px;
   }
 }
 
-.main {
-  display: grid;
-  grid-template-columns: auto 250px;
-  grid-gap: 50px;
-  margin: 3rem 10rem;
+@include media-query($breakpoint-md) {
+  .wrapper {
+    background: $tan;
+  }
+
+  .site-content {
+    background: $white-alpha;
+  }
 }
