@@ -11,12 +11,13 @@
 
 .site-content {
   background: transparent;
-  margin: 3rem 10rem;
+  margin: 3rem 4rem;
+  display: grid;
+  grid-template-columns: auto 300px;
+  grid-gap: 100px;
 
   &__wrapper {
-    display: grid;
-    grid-template-columns: auto 250px;
-    grid-gap: 50px;
+    display: block;
   }
 }
 

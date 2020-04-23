@@ -1,14 +1,15 @@
 import classnames from "classnames";
 import "./panel.scss";
 
-const Panel = ({ children, component, loud, brand }) => {
-  const className = classnames({
+const Panel = ({ children, className, component, loud, brand }) => {
+  const panelClass = classnames({
+    [className]: true,
     panel: true,
-    "panel--loud": loud
+    "panel--loud": loud,
   });
 
   const Component = component || "div";
-  return <Component className={className}>{children}</Component>;
+  return <Component className={panelClass}>{children}</Component>;
 };
 
 export default Panel;

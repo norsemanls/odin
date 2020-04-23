@@ -1,6 +1,6 @@
 ---
 title: Overview of Settlements
-toc: true
+useTableOfContents: true
 ---
 
 ## What is a life settlement?

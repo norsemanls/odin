@@ -6,8 +6,11 @@ const MenuItem = ({ href, children }) => {
   const router = useRouter();
   const itemClass = classnames({
     menu__list__item: true,
-    "menu__list__item--active": router.pathname === href
+    "menu__list__item--active": router.asPath === href,
   });
+
+  console.log(`pathname ${router.asPath}`);
+  console.log(`href ${href}`);
 
   return (
     <li className={itemClass}>

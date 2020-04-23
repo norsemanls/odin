@@ -44,8 +44,8 @@ $grey-dark: darken($grey, 25%);
 $content-width: 1000px;
 
 $breakpoint-sm: 575.98px;
-$breakpoint-md: 767.98px;
-$breakpoint-lg: 991.98px;
+$breakpoint-md: 767.98px; // formerly on-palm
+$breakpoint-lg: 991.98px; // formerly on-laptop
 $breakpoint-xl: 1199.98px;
 
 // Use media queries like this:

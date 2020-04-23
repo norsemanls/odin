@@ -1,0 +1,25 @@
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 4px 5px;
+  background: $red-alpha;
+  color: $white-alpha;
+  text-align: center;
+  font-size: 25px;
+
+  &:hover,
+  &:focus,
+  &:focus:hover,
+  &:active {
+    color: $white-alpha;
+  }
+
+  @include media-query($on-palm) {
+    right: 15px;
+    bottom: 5px;
+  }
+}

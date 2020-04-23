@@ -3,12 +3,12 @@ const withSass = require("@zeit/next-sass");
 const resourcesLoader = {
   loader: "sass-resources-loader",
   options: {
-    resources: ["./main.scss"]
-  }
+    resources: ["./main.scss"],
+  },
 };
 
 module.exports = withSass({
-  webpack: config => {
+  webpack: (config) => {
     config.module.rules.push(
       {
         test: /\.scss$/,
@@ -17,16 +17,16 @@ module.exports = withSass({
           {
             loader: "sass-resources-loader",
             options: {
-              resources: ["./src/vars.scss"]
-            }
-          }
-        ]
+              resources: ["./src/styles/index.scss"],
+            },
+          },
+        ],
       },
       {
         test: /\.md$/,
-        use: "raw-loader"
+        use: "raw-loader",
       }
     );
     return config;
-  }
+  },
 });

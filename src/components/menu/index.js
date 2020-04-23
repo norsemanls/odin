@@ -8,12 +8,12 @@ const Menu = () => {
     { href: "/about", title: "About Norseman" },
     { href: "/roadmap", title: "Roadmap" },
     { href: "/tutorial", title: "Advisor Tutorial" },
-    { href: "/contact", title: "Contact Us" }
+    { href: "/contact", title: "Contact Us" },
   ];
 
   return (
-    <nav class="menu">
-      <ul role="navigation" class="menu__list">
+    <nav className="menu">
+      <ul role="navigation" className="menu__list">
         {menuItems.map(({ href, title }, i) => (
           <MenuItem href={href} key={`menu-item-${i}`}>
             {title}
