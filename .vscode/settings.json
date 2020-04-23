@@ -1,9 +1,5 @@
 {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-<<<<<<< HEAD
-    // "workbench.colorTheme": "Monokai Dimmed"
-=======
     "workbench.colorTheme": "One Monokai"
->>>>>>> master
 }
